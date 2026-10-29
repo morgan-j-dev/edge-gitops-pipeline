@@ -4,7 +4,7 @@ A production-ready Infrastructure-as-Code (IaC) pipeline that automates edge net
 
 This repository demonstrates how to manage an enterprise-grade secure edge layer using a GitOps framework. By treating delivery rules and security policies as version-controlled code, engineering teams can eliminate manual dashboard errors, guarantee compliance, and accelerate release velocities.
 
-## ð Project Architecture & File Mapping
+##  Project Architecture & File Mapping
 
 The workspace is modularized into dedicated structural layers within the `terraform/` directory:
 *   **`providers.tf`**: Initializes infrastructure providers and handles environment locking.
@@ -14,7 +14,7 @@ The workspace is modularized into dedicated structural layers within the `terraf
 
 ---
 
-##  ¯Enterprise Portfolio Mapping: Translating to Akamai, Jira, and Confluence
+##  Enterprise Portfolio Mapping: Translating to Akamai, Jira, and Confluence
 
 To facilitate rapid technical testing without enterprise contract constraints, this repository utilizes an open-source provider sandbox. However, the architectural design, abstraction patterns, and operational logic directly translate to an **Akamai-centric enterprise ecosystem**:
 
@@ -28,7 +28,7 @@ The conditional routing, compression settings, and file-extension matching logic
 The security layer mirrors the configuration lifecycle of **Akamai Web Application Protector (WAP)** and App & API Protector.
 *   **Attack Group Controls**: The regex rules for blocking malicious payloads match shifting the native Akamai WAP **SQLi and XSS Attack Groups** into active `Deny/Block` mode.
 *   **Bot Management Profiles**: The challenge rule block maps directly to executing an Akamai **Bot Manager** client-side challenge to drop unauthorized directory scanning traffic before it incurs origin compute bills.
-*   **Enterprise Scaling**: In a live Akamai production setup, these manual filters would be entirely abstracted using Akamai's **Adaptive Security Engine (`attack_protection_rule_set = "ASE_AUTO"`)** to offload signature maintenance to Akamaiâ€™s global threat intelligence teams.
+*   **Enterprise Scaling**: In a live Akamai production setup, these manual filters would be entirely abstracted using Akamai's **Adaptive Security Engine (`attack_protection_rule_set = "ASE_AUTO"`)** to offload signature maintenance to AkamaiÃ¢â‚¬â„¢s global threat intelligence teams.
 
 ### 3. Change Management & Jira Support
 In an enterprise workflow, the GitHub Actions deployment engine integrates directly with **Jira Change Management via CI/CD webhooks**:
@@ -43,7 +43,7 @@ To eliminate documentation rot, the output schemas of this pipeline sync with **
 
 ---
 
-## ð Automated CI/CD Pipeline Lifecycle
+## Ã° Automated CI/CD Pipeline Lifecycle
 
 The continuous deployment architecture is governed by GitHub Actions inside `.github/workflows/deploy-edge.yml`:
 
