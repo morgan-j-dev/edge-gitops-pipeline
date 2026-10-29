@@ -43,7 +43,7 @@ To eliminate documentation rot, the output schemas of this pipeline sync with **
 
 ---
 
-## ð Automated CI/CD Pipeline Lifecycle
+##  Automated CI/CD Pipeline Lifecycle
 
 The continuous deployment architecture is governed by GitHub Actions inside `.github/workflows/deploy-edge.yml`:
 
